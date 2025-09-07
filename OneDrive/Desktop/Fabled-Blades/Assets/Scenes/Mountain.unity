@@ -551,8 +551,7 @@ Transform:
   m_LocalPosition: {x: 31.33, y: -4.68, z: 0}
   m_LocalScale: {x: 1.6525823, y: 1.4877489, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 584155947}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2344,8 +2343,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1703456350}
-  m_Father: {fileID: 161025428}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3671,7 +3670,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1190697280
 GameObject:
@@ -4172,7 +4171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warriorHealth: {fileID: 0}
   inventoryUI: {fileID: 920057268}
-  inventoryText: {fileID: 447000831}
+  inventoryText: {fileID: 0}
 --- !u!1 &1340930218
 GameObject:
   m_ObjectHideFlags: 0
@@ -4327,7 +4326,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1431253137 stripped
 Transform:
@@ -4754,7 +4753,7 @@ RectTransform:
   m_Children:
   - {fileID: 2039639421}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
