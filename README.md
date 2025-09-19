@@ -12,9 +12,7 @@ Building a resume can be stressful and time-consuming. This tool makes it simple
 - **Live Preview**: See your resume update as you type
 - **Two Templates**: Modern (colorful) or Classic (traditional)
 - **Easy Editing**: Add or remove sections with simple clicks
-- **PDF Export**: Download with clickable links
-- **Auto-Save**: Never lose your work
-- **Mobile Friendly**: Works on all devices
+- **PDF Export**: Download with clickable linkss
 - **Print Ready**: Perfect formatting for printing
 
 ## Templates
