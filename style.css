@@ -1,0 +1,352 @@
+/* Global Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Main Layout */
+.container {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.form-container,
+.preview-container {
+    flex: 1;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-container {
+    padding: 20px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.preview-container {
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Form Elements */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 18px;
+    padding: 15px 20px 0;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fafafa;
+}
+
+legend {
+    font-weight: 600;
+    color: #2c3e50;
+    padding: 0 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+    background: #fff;
+    color: #333;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+.template-switcher {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.template-switcher select {
+    width: auto;
+    margin-bottom: 0;
+    min-width: 120px;
+}
+
+#export-pdf {
+    background: #27ae60;
+    margin-left: auto;
+}
+
+#export-pdf:hover {
+    background: #229954;
+}
+
+/* Preview Area */
+.resume-preview {
+    padding: 30px;
+    min-height: 80vh;
+    background: white;
+    color: #333;
+    overflow-y: auto;
+    border-top: 1px solid #eee;
+}
+
+/* Dynamic Entries */
+.entry {
+    background: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border-left: 3px solid #3498db;
+}
+
+.entry button {
+    background: #e74c3c;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.entry button:hover {
+    background: #c0392b;
+}
+
+/* Modern Template */
+.modern .header {
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.modern .header h1 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.modern .section {
+    margin-bottom: 25px;
+}
+
+.modern .section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.modern .entry {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border-left: 4px solid #3498db;
+}
+
+/* Classic Template */
+.classic {
+    display: flex;
+    gap: 30px;
+}
+
+.classic .left-column {
+    width: 35%;
+    border-right: 2px solid #eee;
+    padding-right: 25px;
+}
+
+.classic .right-column {
+    width: 65%;
+    padding-left: 25px;
+}
+
+.classic .header h1 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.classic .section h2 {
+    color: #2c3e50;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.classic .contact-info {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.classic .entry {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+/* Skills Display */
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.skill-level {
+    color: #f39c12;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .form-container {
+        max-height: none;
+    }
+    
+    .resume-preview {
+        min-height: 60vh;
+    }
+    
+    .classic {
+        display: block !important;
+    }
+    
+    .classic .left-column,
+    .classic .right-column {
+        width: 100% !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+    
+    .classic .left-column {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+    }
+}
+
+/* Print Styles */
+@media print {
+    /* Hide UI elements */
+    .form-container,
+    .template-switcher,
+    #export-pdf {
+        display: none !important;
+    }
+    
+    .preview-container h2 {
+        display: none !important;
+    }
+    
+    /* Layout fixes */
+    .container { display: block !important; }
+    .preview-container { width: 100% !important; padding: 0 !important; }
+    
+    /* Make text bold and dark for print */
+    .resume-preview {
+        padding: 20mm !important;
+        background: #fff !important;
+        color: #000 !important;
+        font-weight: 500 !important; /* Medium weight base */
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    
+    /* Bold headings */
+    .resume-preview h1 {
+        color: #000 !important;
+        font-weight: 800 !important;
+        font-size: 24pt !important;
+    }
+    
+    .resume-preview h2 {
+        color: #000 !important;
+        font-weight: 700 !important;
+        font-size: 18pt !important;
+    }
+    
+    /* Bold emphasis text */
+    .resume-preview strong,
+    .resume-preview b {
+        color: #000 !important;
+        font-weight: 900 !important;
+    }
+    
+    /* Active clickable links */
+.resume-preview a {
+    color: #0066cc !important;
+    text-decoration: underline !important;
+    cursor: pointer !important;
+}
+
+    
+    @page {
+        margin: 15mm;
+        size: A4;
+    }
+}
